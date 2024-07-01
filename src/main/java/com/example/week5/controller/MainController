@@ -1,0 +1,33 @@
+package com.example.week5.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class MainController {
+
+    @GetMapping("/login.html")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping("/home.html")
+    public String home() {
+        return "home";
+    }
+
+    @GetMapping("/admin.html")
+    public String admin() {
+        return "admin";
+    }
+
+    @GetMapping("/index.html")
+    public String index() {
+        return "index";
+    }
+
+    @GetMapping("/access-denied.html")
+    public String accessDenied() {
+        return "access-denied";
+    }
+}
